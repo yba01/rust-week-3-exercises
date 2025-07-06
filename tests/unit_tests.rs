@@ -106,6 +106,7 @@ mod tests {
         );
         let tx = BitcoinTransaction::new(1, vec![input], 0);
         let output = format!("{}", tx);
+
         assert!(output.contains("Version: 1"));
         assert!(output.contains("Lock Time: 0"));
         assert!(output.contains("Previous Output Vout: 7"));
